@@ -9,7 +9,7 @@ export const Contact = () => {
       <Container className="max-w-lg text-center">
         <h2 className="text-green-500 mb-4">Contact me</h2>
         <p className="mb-8">
-          What’s next? Feel free to reach out to me if you're looking for a
+          What’s next? Feel free to reach out to me if you&apos;re looking for a
           developer, have a query, or simply want to connect.
         </p>
 
