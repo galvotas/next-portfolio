@@ -32,13 +32,13 @@ export const Navigation = () => {
 
   return (
     <Container className="py-2 md:hidden">
-      <div className="flex justify-between items-center">
+      <header className="flex justify-between items-center">
         <Logo />
 
         <button onClick={toggleMenu}>
           {isOpen ? <CgClose size="24" /> : <CiMenuBurger size="24" />}
         </button>
-      </div>
+      </header>
 
       {isOpen && (
         <nav className="flex justify-center absolute w-full h-[calc(100%-48px)] left-0 bg-white z-10 pt-10">

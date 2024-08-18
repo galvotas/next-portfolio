@@ -2,6 +2,8 @@ import React from "react";
 import { Section } from "../../../components/Section";
 import { Container } from "../../../components/Container";
 import Image from "next/image";
+import { BiLink } from "react-icons/bi";
+import { link } from "fs";
 
 export const Work = () => {
   return (
@@ -37,7 +39,12 @@ export const Work = () => {
                 </div>
 
                 <div className="p-4 md:p-12">
-                  <h4 className="mb-4">{workItem.title}</h4>
+                  <div className="flex justify-between items-center mb-4">
+                    <h4>{workItem.title}</h4>
+                    <a href={workItem.link} target="_blank">
+                      <BiLink size="24" />
+                    </a>
+                  </div>
                   <p className="text-neutral-700 max-w-lg mb-4">
                     {workItem.description}
                   </p>
@@ -84,6 +91,7 @@ const work = [
       "Resend",
       "Analytics",
     ],
+    link: "https://stachycodes.com",
   },
 
   {
@@ -110,5 +118,6 @@ const work = [
       "Analytics",
       "A/B Testing",
     ],
+    link: "https://colonbroom.com",
   },
 ];

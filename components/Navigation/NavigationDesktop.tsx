@@ -6,11 +6,11 @@ import { Links } from "./Links";
 export const NavigationDesktop = () => {
   return (
     <Container className="py-4 hidden md:block">
-      <div className="flex justify-between items-center">
+      <header className="flex justify-between items-center">
         <Logo />
 
         <Links />
-      </div>
+      </header>
     </Container>
   );
 };
